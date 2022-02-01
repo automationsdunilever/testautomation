@@ -13,7 +13,7 @@ public class TC_0001 {
 
     String firstProductId = "70007538";
     String secondProductId = "68174113";
-    String thirdProductId= "68488509";
+    String thirdProductId = "68488509";
 
     @Test
     public void loginTest() throws InterruptedException {
@@ -24,7 +24,17 @@ public class TC_0001 {
         Assert.assertTrue(false);
         homePage.clickSubMenu();
         homePage.addToBasketInStock();
-        homePage.addToBasketNotInStock();
+        //   homePage.addToBasketNotInStock();
+        AccountScreen accountScreen = new AccountScreen();
+        accountScreen.setGoToBasket();
+        accountScreen.setCheckAgreement();
+        accountScreen.setConfirmCart();
+        accountScreen.setConfirmDeliveryAddress();
+        accountScreen.setPopUpCancel();
+        Allure.addAttachment("Fıyat", new ByteArrayInputStream(((TakesScreenshot) BasePage.drivers()).getScreenshotAs(OutputType.BYTES)));
+        accountScreen.setPaymentMethodStock();
+        accountScreen.setCashOrCartPaymentValidation();
+
     }
 
     @AfterMethod
@@ -32,9 +42,5 @@ public class TC_0001 {
         if (result.FAILURE == result.getStatus()) {
             Allure.addAttachment("FAILED", new ByteArrayInputStream(((TakesScreenshot) BasePage.drivers()).getScreenshotAs(OutputType.BYTES)));
         }
-    }
-    @AfterClass
-    public void tearDown() {
-        BasePage.drivers().close();
     }
 }

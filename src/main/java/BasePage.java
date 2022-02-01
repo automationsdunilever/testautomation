@@ -33,6 +33,7 @@ public class BasePage {
         WebDriverWait wait = new WebDriverWait(drivers(),20);
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         find(locator).sendKeys(text ,value ,text2);
+
     }
 
 
