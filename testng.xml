@@ -7,8 +7,6 @@
     <test name="Test1" >
         <classes>
             <class name="TC_0001" />
-            <class name="TC_0002" />
-            <class name="TC_0003" />
         </classes>
     </test>
 </suite>
