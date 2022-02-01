@@ -31,19 +31,7 @@ public class BasketPage extends BasePage {
         System.out.println("second " + secondBasketProductGetValue);
         Double secondValue = Double.parseDouble(secondBasketProductGetValue);
 
-        String thirdBasketProductGetValue = drivers().findElement(By.xpath("//div[@class='product-list'][3]//div[@class='price-info']//span[2]")).getText()
-                .replace("Toplam Fiyat: ", "").replace(" TL", "").replace(",", ".");
-        System.out.println("second " + thirdBasketProductGetValue);
-        Double thirdValue = Double.parseDouble(thirdBasketProductGetValue);
-
-        setCheckAgreement();
-
-                 String fourthBasketProductGetValue = drivers().findElement(By.xpath("//div[@class='product-list'][4]//div[@class='price-info']//span[2]")).getText()
-                .replace("Toplam Fiyat: ", "").replace(" TL", "").replace(",", ".");
-        System.out.println("second " + fourthBasketProductGetValue);
-        Double fourthValue = Double.parseDouble(fourthBasketProductGetValue);
-
-        Double finalValue = firstValue + secondValue + thirdValue + fourthValue ;
+        Double finalValue = firstValue + secondValue ;
         System.out.println(finalValue);
         String totalPrice = drivers().findElement(By.xpath("//div[@class='total-price']//span[2]")).getText()
                 .replace(" TL", "").replace(",", ".");
