@@ -19,7 +19,7 @@ public class TC_0001 {
     public void loginTest() throws InterruptedException {
         LoginPage loginPage = new LoginPage();
         loginPage.loginScreen();
-        loginPage.loginScreenControl();
+       // loginPage.loginScreenControl();
 
         /*
         HomePage homePage = new HomePage();
