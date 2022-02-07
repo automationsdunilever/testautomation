@@ -37,7 +37,7 @@ public class LoginPage extends BasePage {
         Assert.assertEquals(true, rxBtn.isDisplayed());
         WebElement otcBtn = driver.findElement(By.linkText("GÜZELLİK & KİŞİSEL BAKIM"));
         Assert.assertEquals(true, otcBtn.isDisplayed());
-        WebElement herbBtn = driver.findElement(By.linkText("KIMBERLY CLARK"));
+        WebElement herbBtn = driver.findElement(By.linkText("KIMBERLY CLAR"));
         Assert.assertEquals(true, herbBtn.isDisplayed());
         WebElement herbBtn2 =  driver.findElement(By.linkText("GIDA"));
         Assert.assertEquals(true, herbBtn2.isDisplayed());
