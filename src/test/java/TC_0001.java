@@ -1,9 +1,9 @@
 import io.qameta.allure.Allure;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.testng.Assert;
+//import org.testng.Assert;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
+//import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
