@@ -19,6 +19,9 @@ public class TC_0001 {
     public void loginTest() throws InterruptedException {
         LoginPage loginPage = new LoginPage();
         loginPage.loginScreen();
+        loginPage.loginScreenControl();
+
+        /*
         HomePage homePage = new HomePage();
         homePage.myBasket();
         Assert.assertTrue(false);
@@ -31,10 +34,10 @@ public class TC_0001 {
         accountScreen.setConfirmCart();
         accountScreen.setConfirmDeliveryAddress();
         accountScreen.setPopUpCancel();
-        Allure.addAttachment("Fıyat", new ByteArrayInputStream(((TakesScreenshot) BasePage.drivers()).getScreenshotAs(OutputType.BYTES)));
+        Allure.addAttachment("Fiyat", new ByteArrayInputStream(((TakesScreenshot) BasePage.drivers()).getScreenshotAs(OutputType.BYTES)));
         accountScreen.setPaymentMethodStock();
         accountScreen.setCashOrCartPaymentValidation();
-
+*/
     }
 
     @AfterMethod

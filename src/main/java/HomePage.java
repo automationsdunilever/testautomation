@@ -67,34 +67,15 @@ public class HomePage extends BasePage {
     public void addToBasketNotInStock() throws InterruptedException {
         List<WebElement> products = drivers().findElements(By.xpath("//div[@style='color:red;white-space:nowrap;']/../.."));
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 2; i++) {
             Thread.sleep(1000);
             products.get(i).findElement(By.xpath(".//button[@class='secondary-button add-basket']")).click();
+            products.get(i).findElement(By.xpath(".//button[@class='action-button plus']")).click();
+            products.get(i).findElement(By.xpath(".//button[@class='add-to-basket']")).click();
+            products.get(i).findElement(By.xpath(".//button[@class='add-to-basket']")).click();
         }
         Thread.sleep(1000);
     }
-
-
-
-    /*
-    public void setSearchBox(String productId){
-        send(searchBox,productId);
-        click(ıconSearch);
-
-    }
-
-    public void addProduct() throws InterruptedException {
-        Thread.sleep(2000);
-        scrollPageElement(drivers().findElement(By.xpath("//button[normalize-space()='Sepete Ekle']")));
-        click(addBasket);
-        sendKeys1(valueArea, Keys.CONTROL,"a",Keys.DELETE);
-        send(valueArea,"5");
-        click(addProductIconBasket);
-        scrollPageElement(drivers().findElement(By.xpath("//header[@id='mainHeader']//a[normalize-space()='Ürünler']")));
-
-    }
-
-     */
-
-
 }
+
+
