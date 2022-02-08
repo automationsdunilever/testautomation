@@ -3,7 +3,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-//import org.testng.Assert;
+import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
@@ -31,7 +31,7 @@ public class LoginPage extends BasePage {
 
     }
 
-    /*public void loginScreenControl() throws InterruptedException {
+ public void loginScreenControl() throws InterruptedException {
 
         WebElement rxBtn = driver.findElement(By.linkText("ÇAMAŞIR & EV BAKIM"));
         Assert.assertEquals(true, rxBtn.isDisplayed());
@@ -41,5 +41,5 @@ public class LoginPage extends BasePage {
         Assert.assertEquals(true, herbBtn.isDisplayed());
         WebElement herbBtn2 =  driver.findElement(By.linkText("GIDA"));
         Assert.assertEquals(true, herbBtn2.isDisplayed());
-    }*/
+    }
 }
