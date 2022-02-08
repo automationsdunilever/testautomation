@@ -42,4 +42,15 @@ public class LoginPage extends BasePage {
         WebElement herbBtn2 =  driver.findElement(By.linkText("GIDA"));
         Assert.assertEquals(true, herbBtn2.isDisplayed());
     }
+    public void FloginScreenControl() throws InterruptedException {
+
+        WebElement rxBtn = driver.findElement(By.linkText("ÇAMAŞIR & EV BAKIM"));
+        Assert.assertEquals(true, rxBtn.isDisplayed());
+        WebElement otcBtn = driver.findElement(By.linkText("GÜZELLİK & KİŞİSEL BAKI"));
+        Assert.assertEquals(true, otcBtn.isDisplayed());
+        WebElement herbBtn = driver.findElement(By.linkText("KIMBERLY CLARK"));
+        Assert.assertEquals(true, herbBtn.isDisplayed());
+        WebElement herbBtn2 =  driver.findElement(By.linkText("GIDA"));
+        Assert.assertEquals(true, herbBtn2.isDisplayed());
+    }
 }
