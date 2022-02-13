@@ -8,7 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import java.io.ByteArrayInputStream;
-//<class name="TC_0004"/> testng
+
 public class TC_0001 {
 
     String firstProductId = "70007538";
@@ -21,14 +21,14 @@ public class TC_0001 {
         loginPage.loginScreen();
        loginPage.loginScreenControl();
 
-
+        /*
         HomePage homePage = new HomePage();
         homePage.myBasket();
-   //     Assert.assertTrue(false);
+        Assert.assertTrue(false);
         homePage.clickSubMenu();
         homePage.addToBasketInStock();
         //   homePage.addToBasketNotInStock();
-       /* AccountScreen accountScreen = new AccountScreen();
+        AccountScreen accountScreen = new AccountScreen();
         accountScreen.setGoToBasket();
         accountScreen.setCheckAgreement();
         accountScreen.setConfirmCart();
